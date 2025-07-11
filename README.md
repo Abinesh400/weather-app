@@ -21,7 +21,7 @@
 | Backend      | [Node.js/Express](#) or [Python/Flask](#) (optional: for API key security) |
 | API          | OpenWeatherMap |
 
-##💡 Usage
+## 💡 Usage
 Search by typing a city or ZIP code and hitting “Enter” or the search icon.
 
 For geolocation, allow the browser permission prompt.
@@ -30,14 +30,14 @@ View current conditions, hourly/daily forecast, weather icons, humidity, wind sp
 
 Switch between Celsius and Fahrenheit under Settings.
 
-##🔧 Customize
+## 🔧 Customize
 Theme: Tailwind / Bootstrap theme switcher or custom CSS.
 
 Charts: Modify or choose libraries like Chart.js, D3.js or Recharts.
 
 API Source: Swap between OpenWeatherMap, WeatherAPI, AccuWeather—adjust endpoints accordingly.
 
-##✅ Deployment
+## ✅ Deployment
 Recommended platforms:
 
 Frontend only: GitHub Pages, Vercel, or Netlify.
@@ -45,12 +45,12 @@ Frontend only: GitHub Pages, Vercel, or Netlify.
 Full stack: Heroku, Render, or Fly.io.
 Include build commands and environment variables in deployment docs.
 
-##🧪 Testing
+## 🧪 Testing
 Use Jest and React Testing Library (if React) or Mocha/Chai for Node projects.
 
 End-to-end tests with Cypress or Playwright.
 
 Define test spec for API responses and UI rendering.
 
-##📄 License
+## 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details
