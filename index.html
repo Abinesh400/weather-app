@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="home-box">
+            <div class="container">
+            <header>
+                <h1>Weather App</h1>
+                <p>Get the current weather information for any city.</p>
+            </header>
+            <br>
+            <br>
+            <div class="search-section">
+                <input type="text" id="cityinput" placeholder="Enter city name (Eg: London, New York)" class="search-input">
+            </div>
+
+            <div class="button-wrapper">
+                <button id="searchButton" class="search-button">Get Weather</button>
+            </div>
+            <p id="loadingMessage" class="hidden">Loading weather information...</p>
+
+        </div>
+        <!-- error message  -->
+        <div id="error" class="error hidden">
+            <p id="errorMessage">please enter a valid city name</p>
+        </div>
+
+        <!-- weather info -->
+        <div id="weatherdisplay" class="weather-display hidden display-card">
+            <h2 id="cityName"></h2>
+            <div class="weather-info">
+                <p id="temperature"></p>
+                <span class="unit">°C</span>
+            </div>
+
+            <div class="description">
+                <p id="weatherdescription"></p>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="detail-item">
+                <span class="label">feels like:</span>
+                <span id="feelsLike"></span>°C
+            </div>
+            <div class="detail-item">
+                <span class="label">Humidity:</span>
+                <span id="humidity"></span>%
+            </div>
+            <div class="detail-item">
+                <span class="label">Wind Speed:</span>
+                <span id="windSpeed"></span> m/s
+            </div>
+        </div>
+</div>
+     <footer class="footer">
+            <p class="footer-text">&copy; 2025 Abinesh Varan</p>
+        </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

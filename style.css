@@ -1,0 +1,223 @@
+
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(135deg, #a5d8ff, #e0c3fc);
+    background-size: cover;
+    color: #1e293b;
+}
+
+
+/* ==== CONTAINER ==== */
+.container {
+
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.home-box{
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+}
+
+/* ==== HEADER ==== */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+header p {
+    font-size: 1rem;
+    color: #475569;
+    margin-top: 6px;
+}
+
+/* ==== SEARCH BAR ==== */
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 240px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s ease;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.search-input:focus {
+    border-color: #3b82f6;
+}
+
+.search-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #2563eb;
+}
+
+/* ==== ERROR ==== */
+#error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-left: 4px solid #ef4444;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ==== WEATHER DISPLAY ==== */
+.weather-display {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 5s ease;
+}
+
+.weather-display h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.weather-info {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f97316;
+    margin: 10px 0;
+}
+
+.unit {
+    font-size: 1.4rem;
+    color: #64748b;
+    vertical-align: top;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #475569;
+    margin-top: 10px;
+}
+
+/* ==== DETAILS ==== */
+.weather-details {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-left: 20px
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #334155;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item .label {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+/* ==== RESPONSIVE ==== */
+@media screen and (max-width: 500px) {
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+
+/* ==== HIDDEN & ANIMATION ==== */
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.footer-text {
+    text-align: center;
+    margin-top: 23.5%;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.display-card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
